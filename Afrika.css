@@ -1,0 +1,98 @@
+/*Indentera css*/
+/*Referar till header som finns i html dokumentet.*/
+header {
+/*font-size bestämmer storleken på texten, 1em är hur stor textenhar varit innan, om man
+har 2em betyder det att den är dubbelt så stor som texten har bestämts innan.*/
+font-size : 1.5em;
+/*Text-align bestämmer var i dokumentet texten ska vara.*/
+text-align : left;
+/*font-family är vilket textstil det är på texten.*/
+font-family : georgia;
+}
+}
+a:link {
+text-decoration: none;
+/*Color är färgen på texten.*/
+color: rgba(82, 99, 71, 0.4);
+}
+a:visited {
+text-decoration: none;
+ color: rgba(82, 99, 71, 0.4);
+}
+a:hover {
+text-decoration: none;
+ color: rgba(82, 99, 71, 0.4);
+}
+a:active {
+text-decoration: none;
+ color: rgba(82, 99, 71, 0.4);
+}
+
+  body {
+  background-image : url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2101625.jpg&f=1&nofb=1");
+  color: rgba(82, 99, 71, 0.8);
+  }
+h1 {
+  color: rgba(82, 99, 71, 0.8);
+  text-align: center;
+}
+ h2 {
+  color: rgba(82, 99, 71, 0.8);
+  text-align: left;
+}
+/*Innehåll för grid, ett system för att organisera saker på en hemsida.*/
+.container {
+/*Aktiverar grid*/
+display: grid;
+/*Sätter upp kolumner som man kan använda sig av för att objekt på hemsidan
+ska få en mer exakt position, i det här fallet fem stycken kolumner där samtliga
+är 400pixlar lång.*/
+grid-template-columns: 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+/*Samma sak som columns fast sätter upp rader istället.*/
+grid-template-rows: 300px 300px;
+column-gap: 10px;
+row-gap: 10px;
+}
+.container > div {
+  font-size: 300%;
+  font-family: georgia;
+  color: rgba(82, 99, 71, 0.2)
+}
+.kontakt {
+grid-column-start: 3;
+grid-row-start: 2;
+font-size: 300%;
+display: grid;
+color: rgba(82, 99, 71, 0.6);
+}
+.djur {
+grid-column-start: 6;
+grid-row-start: 2;
+font-size: 300%;
+display: grid;
+color: rgba(82, 99, 71, 0.6);
+}
+.startsida {
+  grid-column-start: 9;
+  grid-row-start: 2;
+  display: grid;
+  color: rgba(82, 99, 71, 0.6);
+  font-size: 300%;
+}
+.elefant {
+grid-column-start: 3;
+grid-row-start: 1;
+font-size: 300%;
+display: grid;
+color: rgba(82, 99, 71, 0.6);
+}
+.lejon {
+  grid-column-start: 6;
+  grid-row-start: 1;
+  font-size: 300%;
+  display: grid;
+  color: rgba(82, 99, 71, 0.6);
+}
+main {
+  font-size: 150%;
+}
